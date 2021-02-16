@@ -1,0 +1,41 @@
+<html>
+	<head>
+		<title>Create account</title>
+		<style>
+			body {
+				background-color: lightblue;
+			}
+
+			li {
+				display: inline;
+				padding: 8px;
+				background-color: grey;
+			}
+		</style>
+
+	</head>
+
+	<body>
+		
+		<ul>
+			<li><a href="/login">Login</a></li>
+			<li><a href="/create_account">Create Account</a></li>
+			<li><a href="/shop">Store</a></li>
+			<li><a href="/cart">Cart</a></li>
+
+		</ul>
+		<h1>Create account</h1>
+		<form action="/create_account", method="POST">
+			Email: <input type="text" name="email">
+			<br/>
+			Username: <input type="text" name="user">
+			<br/>
+			Password: <input type="text" name="pass">
+			<br/>
+			<input type="submit">
+
+			<br/>
+			<p style="color: red;">{{ output }}</p>
+		</form>
+	</body>
+</html>

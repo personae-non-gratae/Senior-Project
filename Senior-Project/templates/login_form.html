@@ -1,0 +1,38 @@
+<html>
+	<head>
+		<title>Login</title>
+		<style>
+			body {
+				background-color: lightblue;
+			}
+
+			li {
+				display: inline;
+				padding: 8px;
+				background-color: grey;
+			}
+		</style>
+		
+	</head>
+
+	<body>
+		<ul>
+			<li><a href="/">Home</a></li>
+			<li><a href="/login">Login</a></li>
+			<li><a href="/create_account">Create Account</a></li>
+			<li><a href="/shop">Store</a></li>
+			<li><a href="/cart">Cart</a></li>
+		</ul>
+		<h1>Login</h1>
+		<form action="/login", method="POST">
+			Username: <input type="text" name="user">
+			<br/>
+			Password: <input type="text" name="pass">
+			<br/>
+			<input type="submit">
+
+			<br/>
+			<p style="color: red;">{{ output }}</p>
+		</form>
+	</body>
+</html>
